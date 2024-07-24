@@ -68,5 +68,15 @@ return [
     'after' => [
         // 'deploy' => '/usr/local/bin/netlify deploy --prod',
     ],
+    'sites' => [
+        [
+            'baseUrl' => 'http://localhost:8000',
+            'paths' => [
+                '/',
+            ],
+            'disk' => 'local',
+            'destination' => 'public',
+        ],
+    ],
 
 ];
